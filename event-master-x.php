@@ -68,11 +68,11 @@ final class Eventmaster
      */
     public function define_constants()
     {
-        define('QUIZBIT_VERSION', self::version);
-        define('QUIZBIT_FILE', __FILE__);
-        define('QUIZBIT_PATH', __DIR__);
-        define('QUIZBIT_URL', plugins_url('', QUIZBIT_FILE));
-        define('QUIZBIT_ASSETS', QUIZBIT_URL . '/assets');
+        define('EVENTMASTER_VERSION', self::version);
+        define('EVENTMASTER_FILE', __FILE__);
+        define('EVENTMASTER_PATH', __DIR__);
+        define('EVENTMASTER_URL', plugins_url('', EVENTMASTER_FILE));
+        define('EVENTMASTER_ASSETS', EVENTMASTER_URL . '/assets');
     }
 
     /**
@@ -101,7 +101,7 @@ final class Eventmaster
             update_option('eventmaster_installed', time());
         }
 
-        update_option('eventmaster_version', QUIZBIT_VERSION);
+        update_option('eventmaster_version', EVENTMASTER_VERSION);
     }
 }
 

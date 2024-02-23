@@ -35,8 +35,8 @@ class Shortcodes
         if (isset($this->shortcodes[$tag])) {
             $attributes = $this->shortcodes[$tag];
 
-            wp_enqueue_script($tag . '-script', QUIZBIT_URL . '/dist/' . $attributes['script'], array('wp-element'), null, true);
-            wp_enqueue_style($tag . '-style', QUIZBIT_URL . '/dist/' . $attributes['style']);
+            wp_enqueue_script($tag . '-script', EVENTMASTER_URL . '/dist/' . $attributes['script'], array('wp-element'), null, true);
+            wp_enqueue_style($tag . '-style', EVENTMASTER_URL . '/dist/' . $attributes['style']);
         }
 
         // Replace this with your actual shortcode content generation logic
